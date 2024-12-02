@@ -1,120 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MK Barber</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('mkbarber/bg-logo.jpg') no-repeat center center fixed;
+            font-family: 'Arial', sans-serif;
+            background-image: url('./mkbarber/logo-mkbarber.jpg');
             background-size: cover;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
-
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
             padding: 20px;
+            text-align: center;
         }
-
-        .photo-container {
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .photo-container img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 1200px;
+            margin: auto;
         }
-
-        .photo-container img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        h1 {
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
         }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            color: white;
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #ffffff;
         }
-
-        footer p {
+        .before-after {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .before-after img {
+            width: 230px;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .before-after img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        .info p {
             margin: 5px 0;
+            color: #ffffff;
         }
-
-        footer a {
-            color: #4CAF50;
+        a {
+            color: #ffdd57;
             text-decoration: none;
         }
-
-        footer a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>MK Barber</h1>
-        <p>"Transformez votre style, où que vous soyez. Prenez rendez-vous maintenant !"</p>
-    </header>
+    <div class="container">
+        <h1>Bienvenue chez MK Barber</h1>
+        <p>Coiffeur à domicile</p>
+        <p>Transformations incroyables, soins personnalisés.</p>
 
-    <section class="gallery">
-        <div class="photo-container">
-            <img src="mkbarber/thomasavant.jpg" alt="Thomas Avant">
-            <img src="mkbarber/thomasapres.jpg" alt="Thomas Après">
+        <div class="before-after">
+            <a href="./mkbarber/thomas-avant.jpg" target="_blank">
+                <img src="./mkbarber/thomas-avant.jpg" alt="Avant transformation">
+            </a>
+            <a href="./mkbarber/thomas-apres.jpg" target="_blank">
+                <img src="./mkbarber/thomas-apres.jpg" alt="Après transformation">
+            </a>
         </div>
-
-        <div class="photo-container">
-            <img src="mkbarber/leroy avant.jpg" alt="Leroy Avant">
-            <img src="mkbarber/leroy apres.jpg" alt="Leroy Après">
+        <div class="before-after">
+            <a href="./mkbarber/leroy-avant.jpg" target="_blank">
+                <img src="./mkbarber/leroy-avant.jpg" alt="Avant transformation">
+            </a>
+            <a href="./mkbarber/leroy-apres.jpg" target="_blank">
+                <img src="./mkbarber/leroy-apres.jpg" alt="Après transformation">
+            </a>
         </div>
-
-        <div class="photo-container">
-            <img src="mkbarber/nicolas-avant.jpg" alt="Nicolas Avant">
-            <img src="mkbarber/nicolas-apres.jpg" alt="Nicolas Après">
+        <div class="before-after">
+            <a href="./mkbarber/nicolas-avant.jpg" target="_blank">
+                <img src="./mkbarber/nicolas-avant.jpg" alt="Avant transformation">
+            </a>
+            <a href="./mkbarber/nicolas-apres.jpg" target="_blank">
+                <img src="./mkbarber/nicolas-apres.jpg" alt="Après transformation">
+            </a>
         </div>
-
-        <div class="photo-container">
-            <img src="mkbarber/gabriel-avant.jpg" alt="Gabriel Avant">
-            <img src="mkbarber/gabriel-apres.jpg" alt="Gabriel Après">
+        <div class="before-after">
+            <a href="./mkbarber/gabriel-avant.jpg" target="_blank">
+                <img src="./mkbarber/gabriel-avant.jpg" alt="Avant transformation">
+            </a>
+            <a href="./mkbarber/gabriel-apres.jpg" target="_blank">
+                <img src="./mkbarber/gabriel-apres.jpg" alt="Après transformation">
+            </a>
         </div>
-    </section>
-
-    <footer>
-        <p>Instagram : <a href="https://instagram.com/mkbrber" target="_blank">@mkbrber</a></p>
-        <p>Email : <a href="mailto:mkbarber974@gmail.com">mkbarber974@gmail.com</a></p>
-        <p>Téléphone : <a href="tel:+33693225971">0693225971</a></p>
-        <p>Localisation : Sainte-Marie, Réunion 974</p>
-    </footer>
+        <div class="info">
+            <p><strong>Contactez-nous:</strong></p>
+            <p>Instagram: <a href="https://instagram.com/mkbrber" target="_blank">@mkbrber</a></p>
+            <p>Email: <a href="mailto:mkbarber974@gmail.com">mkbarber974@gmail.com</a></p>
+            <p>Téléphone: <a href="tel:+2620693225971">0693 22 59 71</a></p>
+            <p>Localisation: Saint-Marie, La Réunion (974)</p>
+        </div>
+    </div>
 </body>
 </html>
